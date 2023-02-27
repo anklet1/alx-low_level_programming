@@ -6,7 +6,7 @@
   *
   * Return: void
   */
-void _rev_string(char *s)
+void rev_string(char *s)
 {
 	int i, c, k;
 	char *a, aux;
@@ -31,5 +31,4 @@ void _rev_string(char *s)
 		a--;
 
 	}
-	
 }
