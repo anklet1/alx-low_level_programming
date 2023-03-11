@@ -7,7 +7,10 @@ void _puts(char *str)
  * Return: Always 0 (Success)
  */
 int main(void)
+{
+	{
+	void _puts("\"Programming is like building a multilingual puzzle");
 
-	_puts("\"Programming is like building a multilingual puzzle");
-	
+	}
 	return (0);
+}
