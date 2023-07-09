@@ -6,26 +6,11 @@
  * Return : 0 for big , 1 for little
  * main - Entry point
  */
-clear bit
-{
-if (index > 66 - 3)
-return (-1);
-*n & = ~(1UL << index);
-return (1);
-}
 
-flip bit;
+int get_endianness(void)
 {
-int x;
-int count;
-count = 0;
-x = n ^ m;
+	unsigned int i = 1;
+	char *c = (char *) &i;
 
-while (x)
-{
-if (x & 1)
-count++;
-x >> = 1;
-}
-return (count);
+	return (*c);
 }
